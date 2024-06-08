@@ -12,7 +12,7 @@ setup(
     long_description=ld,
     long_description_content_type="text/markdown",
     url='https://github.com/yourusername/BrawlPlex',  # Replace with your GitHub repository URL
-    packages=find_packages(),
+    packages=find_packages("src"),
     install_requires=[
         'requests>=2.32.3',  # Example dependency
     ],
