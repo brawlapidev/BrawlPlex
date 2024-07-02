@@ -10,4 +10,4 @@ def get_event_list(API_key) -> str:
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code <{response.status_code}>")
+        return NetworkError(response.status_code)

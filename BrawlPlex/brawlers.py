@@ -10,7 +10,7 @@ def get_brawler_list(API_key) -> str:
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code <{response.status_code}>")
+        return NetworkError(response.status_code)
 # Gets info on a brawler by its tag
 def get_brawler_info(brawler_tag:str="", API_key:str="") -> str:
     from requests import get
@@ -24,4 +24,4 @@ def get_brawler_info(brawler_tag:str="", API_key:str="") -> str:
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code <{response.status_code}>")
+        return NetworkError(response.status_code)

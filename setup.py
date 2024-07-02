@@ -5,16 +5,16 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name='BrawlPlex',
-    version='24.6.3',
+    version='24.7.0',
     author='BrawlAPI Dev',
     author_email='brawlapi.dev@gmail.com',
     description='A package for Brawl Stars API',
     long_description=ld,
     long_description_content_type="text/markdown",
     url='https://github.com/yourusername/BrawlPlex',  # Replace with your GitHub repository URL
-    packages=find_packages("src"),
+    packages=find_packages(),
     install_requires=[
-        'requests>=2.32.3',  # Example dependency
+        'requests>=2.32.3',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',

@@ -27,7 +27,7 @@ def get_player_rankings(region_code: str, limit:str, return_after:str = "", retu
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code {response.status_code}")
+        return NetworkError(response.status_code)
 # Gets brawler rankings in one region
 def get_brawler_rankings(region_code: str, limit:str, brawler_tag:str, return_after:str = "", return_before:str = "", API_key: str = "") -> str:
     from requests import get
@@ -53,7 +53,7 @@ def get_brawler_rankings(region_code: str, limit:str, brawler_tag:str, return_af
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code {response.status_code}")
+        return NetworkError(response.status_code)
 # Get club ranking in one region
 def get_club_rankings(region_code: str, limit:str, return_after:str = "", return_before:str = "", API_key: str = "") -> str:
     from requests import get
@@ -79,7 +79,7 @@ def get_club_rankings(region_code: str, limit:str, return_after:str = "", return
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code {response.status_code}")
+        return NetworkError(response.status_code)
 # Gets powrplay season tag and start and end dates
 def get_powerplay_seasons(region_code: str, limit:str, return_after:str = "", return_before:str = "", API_key: str = "") -> str:
     from requests import get
@@ -106,7 +106,7 @@ def get_powerplay_seasons(region_code: str, limit:str, return_after:str = "", re
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code {response.status_code}")
+        return NetworkError(response.status_code)
 # Returns ranking for a powrplay season
 # Season tags are region spasific
 def get_powerplay_season_rankings(region_code: str, season_tag:str, limit:str, return_after:str = "", return_before:str = "", API_key: str = "") -> str:
@@ -133,4 +133,4 @@ def get_powerplay_season_rankings(region_code: str, season_tag:str, limit:str, r
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code {response.status_code}")
+        return NetworkError(response.status_code)

@@ -14,7 +14,7 @@ def get_player_battlelog(tag:str="", API_key:str="") -> str:
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code <{response.status_code}>")
+        return NetworkError(response.status_code)
 # Gets player info
 def get_player_info(tag:str="", API_key:str="") -> str:
     from requests import get
@@ -28,4 +28,4 @@ def get_player_info(tag:str="", API_key:str="") -> str:
         data = response.json()
         return data
     else:
-        raise NetworkError(f"The Brawl Stars API returned status code <{response.status_code}>")
+        return NetworkError(response.status_code)
