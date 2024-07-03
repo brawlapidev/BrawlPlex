@@ -11,8 +11,8 @@ Has two functions "get_brawler_list". It takes only your API key. The other func
 Has only one function "get_event_list". It takes only the API key.
 ### Rankings
 Has 5 functions.
-1. "get_player_rankings" it takes 5 arguments county code (or global), limit (limits the number of items returned), return before and after (obtained from previus response), your API key.
-2. "get_club_rankings" it takes 5 arguments county code (or global), limit (limits the number of items returned), return before and after (obtained from previus response), your API key.
-3. "get_brawler_rankings" it takes 6 arguments county code (or global), limit (limits the number of items returned), brawler tag, return before and after (obtained from previus response), your API key.
-4. "get_powerplay_seasons" it takes 5 arguments county code (or global), limit (limits the number of items returned), return before and after (obtained from previus response), your API key.
-5. "get_powerplay_season_rankings" it takes 6 arguments county code (or global), county spasific season id, limit (limits the number of items returned), return before and after (obtained from previus response), your API key.
+1. "get_player_rankings" it takes 5 arguments country code (or global), limit (limits the number of items returned), return before and after (obtained from previus response), your API key.
+2. "get_club_rankings" it takes 5 arguments country code (or global), limit (limits the number of items returned), return before and after (obtained from previus response), your API key.
+3. "get_brawler_rankings" it takes 6 arguments country code (or global), limit (limits the number of items returned), brawler tag, return before and after (obtained from previus response), your API key.
+4. "get_powerplay_seasons" it takes 5 arguments country code (or global), limit (limits the number of items returned), return before and after (obtained from previus response), your API key.
+5. "get_powerplay_season_rankings" it takes 6 arguments country code (or global), county spasific season id, limit (limits the number of items returned), return before and after (obtained from previus response), your API key.
